@@ -1,0 +1,61 @@
+#:kivy 1.8.0
+
+<Controller>:
+    StackLayout:
+        padding: 10
+        spacing: 5
+        canvas.before:
+            BorderImage:
+                source: 'yprogs_bg.png'
+                pos: self.pos
+                size: self.size
+        Button:
+            text: root.btn1_text
+            font_size: root.btn_font
+            background_color: root.btn_color
+            size_hint: root.xhint, root.yhint
+            on_press: root.btn_action(root.btn1_action)
+        Button:
+            text: root.btn2_text
+            font_size: root.btn_font
+            background_color: root.btn_color
+            size_hint: root.xhint, root.yhint
+            on_press: root.btn_action(root.btn2_action)
+        Button:
+            text: root.btn3_text
+            font_size: root.btn_font
+            background_color: root.btn_color
+            size_hint: root.xhint, root.yhint
+            on_press: root.btn_action(root.btn3_action)
+        Button:
+            text: root.btn4_text
+            font_size: root.btn_font
+            background_color: root.btn_color
+            size_hint: root.xhint, root.yhint
+            on_press: root.btn_action(root.btn4_action)
+        Button:
+            text: root.btn5_text
+            font_size: root.btn_font
+            background_color: root.btn_color
+            size_hint: root.xhint, root.yhint
+            on_press: root.btn_action(root.btn5_action)
+        Button:
+            text: root.btn6_text
+            font_size: root.btn_font
+            background_color: root.btn_color
+            size_hint: root.xhint, root.yhint
+            on_press: root.btn_action(root.btn6_action)
+        FloatLayout:
+            size: 314, 192
+            Button:
+                pos: 10, 10
+                text: root.btn_exit_text
+                size_hint: root.xhint, root.yhint
+                background_color: 255,0,0,1
+                on_press: exit()
+            Button:
+                pos: root.width - self.width-10, 10
+                text: root.btn_edit_text
+                size_hint: root.xhint, root.yhint
+                background_color: 0,5,1,.7
+                on_press: root.btn_action('notepad.exe yprogs.ini')
