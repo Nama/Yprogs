@@ -14,37 +14,37 @@
             font_size: root.btn_font
             background_color: root.btn_color
             size_hint: root.xhint, root.yhint
-            on_press: root.btn_action(root.btn1_action)
+            on_press: root.btn_action(root.btn1_action, root.btn1_arg)
         Button:
             text: root.btn2_text
             font_size: root.btn_font
             background_color: root.btn_color
             size_hint: root.xhint, root.yhint
-            on_press: root.btn_action(root.btn2_action)
+            on_press: root.btn_action(root.btn2_action, root.btn2_arg)
         Button:
             text: root.btn3_text
             font_size: root.btn_font
             background_color: root.btn_color
             size_hint: root.xhint, root.yhint
-            on_press: root.btn_action(root.btn3_action)
+            on_press: root.btn_action(root.btn3_action, root.btn3_arg)
         Button:
             text: root.btn4_text
             font_size: root.btn_font
             background_color: root.btn_color
             size_hint: root.xhint, root.yhint
-            on_press: root.btn_action(root.btn4_action)
+            on_press: root.btn_action(root.btn4_action, root.btn4_arg)
         Button:
             text: root.btn5_text
             font_size: root.btn_font
             background_color: root.btn_color
             size_hint: root.xhint, root.yhint
-            on_press: root.btn_action(root.btn5_action)
+            on_press: root.btn_action(root.btn5_action, root.btn5_arg)
         Button:
             text: root.btn6_text
             font_size: root.btn_font
             background_color: root.btn_color
             size_hint: root.xhint, root.yhint
-            on_press: root.btn_action(root.btn6_action)
+            on_press: root.btn_action(root.btn6_action, root.btn6_arg)
         FloatLayout:
             size: 314, 192
             Button:
@@ -58,4 +58,4 @@
                 text: root.btn_edit_text
                 size_hint: root.xhint, root.yhint
                 background_color: 0,5,1,.7
-                on_press: root.btn_action('notepad.exe yprogs.ini')
+                on_press: root.btn_action(root.sys_app, 'yprogs.ini')

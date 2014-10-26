@@ -1,9 +1,12 @@
 from distutils.core import setup
-import py2exe
 
 setup(name='Yprogs',
-      version='0.3',
+      version='0.5',
+      description='Front-End GUI application to open quickly folder without storing massive amounts of shortcuts.',
+      author='Murat Özel',
+      url='https://github.com/Nama',
+      platforms=['Windows', 'Linux'],
       py_modules=['yprogs'],
       console=['yprogs.py'],
-      options={'py2exe': {'excludes': ['Tkconstants', 'Tkinter', 'Tcl', '_imagingtk', 'PIL._imagingtk', 'ImageTk', 'PIL.ImageTk', 'FixTk']}}
+      data_files=['yprogs.ico', 'yprogs.ini', 'yprogs.kv', 'yprogs_bg.png']
       )
